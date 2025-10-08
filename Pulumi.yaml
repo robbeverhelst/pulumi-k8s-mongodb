@@ -1,0 +1,3 @@
+name: homelab-mongodb
+runtime: nodejs
+description: MongoDB Community stack with Operator and Mongo Express

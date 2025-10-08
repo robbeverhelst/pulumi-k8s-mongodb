@@ -1,0 +1,24 @@
+{
+  "name": "mongodb-stack",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Pulumi Kubernetes stack: mongodb-stack",
+  "type": "module",
+  "scripts": {
+    "up": "pulumi up --yes --stack ${PULUMI_STACK:-prod}",
+    "preview": "pulumi preview --stack ${PULUMI_STACK:-prod}",
+    "destroy": "pulumi destroy --yes --stack ${PULUMI_STACK:-prod}"
+  },
+  "dependencies": {
+    "@pulumi/kubernetes": "^4",
+    "@pulumi/pulumi": "^3",
+    "yaml": "^2.8.1",
+    "@homelab/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "bun": ">=1.1.0"
+  }
+}
